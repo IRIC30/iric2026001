@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no">
+  <meta name="theme-color" content="#081426">
+  <title>星际守卫 · 打飞机</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="game-shell">
+    <header class="topbar">
+      <div class="brand"><span class="brand-icon">✦</span><span>星际守卫<small>SKY DEFENDER</small></span></div>
+      <div class="stats"><div>得分 <strong id="score">0</strong></div><div>生命 <strong id="lives">♥ ♥ ♥</strong></div></div>
+    </header>
+    <div class="stage" id="stage">
+      <canvas id="game" aria-label="打飞机游戏画面"></canvas>
+      <div class="overlay" id="overlay">
+        <div class="panel">
+          <span class="eyebrow">ARCADE / 01</span>
+          <h1 id="overlay-title">准备起飞</h1>
+          <p id="overlay-message">拖动战机躲避敌机，自动发射子弹。消灭敌机，尽可能获得高分！</p>
+          <button id="start-button" type="button">开始游戏 <span>↗</span></button>
+          <p class="hint">手机：触屏拖动　·　电脑：方向键 / WASD</p>
+        </div>
+      </div>
+    </div>
+    <footer>拖动移动 · 自动射击 <span>最高分 <strong id="best">0</strong></span></footer>
+  </main>
+  <script src="game.js"></script>
+</body>
+</html>
