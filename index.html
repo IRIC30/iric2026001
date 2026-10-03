@@ -13,13 +13,15 @@
       <div class="brand"><span class="brand-icon">✦</span><span>星际守卫<small>SKY DEFENDER</small></span></div>
       <div class="stats"><div>得分 <strong id="score">0</strong></div><div>生命 <strong id="lives">♥ ♥ ♥</strong></div></div>
     </header>
+    <div class="weapons" id="weapons" aria-live="polite">子弹 Lv.1 · 激光 6 击杀解锁 · 导弹 8 击杀解锁</div>
     <div class="stage" id="stage">
+      <div id="boss-hud" class="boss-hud" hidden><span id="boss-label">BOSS</span><div class="boss-track"><div id="boss-health"></div></div></div>
       <canvas id="game" aria-label="打飞机游戏画面"></canvas>
       <div class="overlay" id="overlay">
         <div class="panel">
           <span class="eyebrow">ARCADE / 01</span>
           <h1 id="overlay-title">准备起飞</h1>
-          <p id="overlay-message">拖动战机躲避敌机，自动发射子弹。消灭敌机，尽可能获得高分！</p>
+          <p id="overlay-message">拖动战机躲避敌机，自动射击。击杀升级子弹，6 击杀解锁激光，8 击杀解锁追踪导弹。15 秒后 Boss 来袭！</p>
           <button id="start-button" type="button">开始游戏 <span>↗</span></button>
           <p class="hint">手机：触屏拖动　·　电脑：方向键 / WASD</p>
         </div>

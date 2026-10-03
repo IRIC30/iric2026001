@@ -25,3 +25,9 @@ button span { font-size: 20px; }
 footer { display: flex; justify-content: space-between; padding: 11px 18px calc(11px + env(safe-area-inset-bottom)); color: #7d9eb3; font-size: 11px; }
 footer strong { color: #c8f8ff; }
 @media (max-width: 520px) { body { padding: 0; } .game-shell { height: 100dvh; min-height: 0; border: 0; border-radius: 0; } }
+
+.weapons { padding: 8px 12px; color: #bcecf4; background: #10263e; font-size: 11px; text-align: center; }
+.boss-hud { position: absolute; z-index: 1; top: 12px; left: 15%; width: 70%; pointer-events: none; color: #f4ceff; font-size: 11px; text-align: center; }
+.boss-hud[hidden] { display: none; }
+.boss-track { height: 9px; margin-top: 5px; border: 1px solid #d19af4; border-radius: 6px; overflow: hidden; background: #271839; }
+#boss-health { height: 100%; width: 100%; background: linear-gradient(90deg, #a359ec, #ff79be); }
