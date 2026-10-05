@@ -1,34 +1,6 @@
 <!doctype html>
-<html lang="zh-CN">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no">
-  <meta name="theme-color" content="#081426">
-  <title>星际守卫 · 打飞机</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <main class="game-shell">
-    <header class="topbar">
-      <div class="brand"><span class="brand-icon">✦</span><span>星际守卫<small>SKY DEFENDER</small></span></div>
-      <div class="stats"><div>得分 <strong id="score">0</strong></div><div>生命 <strong id="lives">♥ ♥ ♥</strong></div></div>
-    </header>
-    <div class="weapons" id="weapons" aria-live="polite">子弹 Lv.1 · 激光 6 击杀解锁 · 导弹 8 击杀解锁</div>
-    <div class="stage" id="stage">
-      <div id="boss-hud" class="boss-hud" hidden><span id="boss-label">BOSS</span><div class="boss-track"><div id="boss-health"></div></div></div>
-      <canvas id="game" aria-label="打飞机游戏画面"></canvas>
-      <div class="overlay" id="overlay">
-        <div class="panel">
-          <span class="eyebrow">ARCADE / 01</span>
-          <h1 id="overlay-title">准备起飞</h1>
-          <p id="overlay-message">拖动战机躲避敌机，自动射击。击杀升级子弹，6 击杀解锁激光，8 击杀解锁追踪导弹。15 秒后 Boss 来袭！</p>
-          <button id="start-button" type="button">开始游戏 <span>↗</span></button>
-          <p class="hint">手机：触屏拖动　·　电脑：方向键 / WASD</p>
-        </div>
-      </div>
-    </div>
-    <footer>拖动移动 · 自动射击 <span>最高分 <strong id="best">0</strong></span></footer>
-  </main>
-  <script src="game.js"></script>
-</body>
-</html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,user-scalable=no"><meta name="theme-color" content="#11121d"><title>世界斗士 · 街机格斗</title><link rel="stylesheet" href="style.css"></head>
+<body><main class="shell"><header><div class="brand">WORLD <b>FIGHTERS</b><small>世界斗士 · 街机格斗</small></div><div id="round-label">选择斗士</div></header>
+<section class="arena"><div class="hud"><div class="fighter-hud"><span id="p-name">斗士</span><div class="health"><i id="p-health"></i></div><div class="energy"><i id="p-energy"></i></div></div><div class="timer" id="timer">60</div><div class="fighter-hud right"><span id="e-name">对手</span><div class="health"><i id="e-health"></i></div><div class="energy"><i id="e-energy"></i></div></div></div><canvas id="game" width="960" height="540" aria-label="双人格斗游戏画面"></canvas><div class="banner" id="banner" hidden></div>
+<div class="overlay" id="overlay"><div class="panel"><div class="eyebrow">WORLD FIGHTERS / ARCADE</div><h1 id="menu-title">选择你的斗士</h1><p id="menu-text">来自四个国家的斗士，各有专属招式。选择角色，挑战电脑对手。</p><div class="roster" id="roster"></div><button id="start" type="button">开始对战</button><p class="help">电脑：A/D 移动 · W 跳跃 · S 防御 · J 轻击 · K 重击 · L 特技<br>手机：使用屏幕下方按钮</p></div></div></section>
+<div class="controls" id="controls"><div class="pad"><button data-key="left" aria-label="向左">◀</button><button data-key="right" aria-label="向右">▶</button><button data-key="jump" aria-label="跳跃">跳</button><button data-key="block" aria-label="防御">防</button></div><div class="attacks"><button data-key="light" aria-label="轻击">轻击</button><button data-key="heavy" aria-label="重击">重击</button><button data-key="special" aria-label="特技">特技</button></div></div><footer>先赢两回合获胜 <span>原创角色 · 手机横屏体验更佳</span></footer></main><script src="game.js"></script></body></html>
